@@ -1,0 +1,58 @@
+$darkBlue: #2D80C4;
+$lighterBlue: #EEF7FF;
+
+//$darkGreen: #70B226;
+$darkGreen: #56a201;
+$lightGreen: #cbf6fd;
+
+$darkGray: #5D6D75;
+$lighterGray: #F5F5F5;
+
+$white: #fff;
+$black: #000000;
+
+$textColor: #576271;
+$backgroundColor: #F1F1F1;
+
+
+body {
+  background-color: $backgroundColor;
+  color: $textColor;
+  font-family: 'Poppins', sans-serif;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: lighten($darkGray, 80%);
+
+  }
+
+  &:hover {
+    &::-webkit-scrollbar-thumb {
+      background: lighten($darkGray, 37%);
+    }
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@import "bootstrap-overwrite";
+@import "icons";
+@import "login-registration";
+@import "layout";
+@import "left-menu";
+@import "topbar";
+@import "content-component";
+@import "footer";
+@import "javascript-change";
+
+
+@import "registration/registration";
+//@import "out-patient/out-patient";
+//@import "laboratory/laboratory";

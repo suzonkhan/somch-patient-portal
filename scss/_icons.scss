@@ -1,0 +1,41 @@
+.icon {
+  display: inline-block;
+  background: url("../images/sprites.png") no-repeat left top;
+}
+
+.icon-35x {
+  width: 35px;
+  height: 35px;
+}
+
+.icon-dashboard {
+  background-position: 0 2px;
+}
+
+.icon-outdoor {
+  background-position: -35px 2px;
+}
+
+.icon-pharmacy {
+  background-position: -70px 2px;
+}
+
+.icon-laboratory {
+  background-position: -105px 2px;
+}
+
+.icon-pathology {
+  background-position: -140px 2px;
+}
+
+.icon-inventory {
+  background-position: -175px 2px;
+}
+
+.icon-store {
+  background-position: -210px 2px;
+}
+
+.icon-indoor {
+  background-position: -245px 2px;
+}

@@ -1,0 +1,39 @@
+.btn-primary {
+  background-color: $darkBlue;
+  border-color: $darkBlue;
+
+  &:hover {
+    background-color: darken($darkBlue, 10%);
+  }
+}
+
+.btn-outline-primary {
+  border-color: $darkBlue;
+  color: $darkBlue;
+
+  &:hover {
+    background-color: darken($darkBlue, 10%);
+  }
+}
+
+.bg-primary {
+  background-color: $darkBlue !important;
+}
+
+.btn-success {
+  background: $darkGreen;
+  border-color: $darkGreen;
+
+  &:hover {
+    background: $darkGreen;
+    border-color: $darkGreen;
+  }
+}
+
+.text-primary {
+  color: $darkBlue;
+}
+
+.text-success {
+  color: $darkGreen;
+}

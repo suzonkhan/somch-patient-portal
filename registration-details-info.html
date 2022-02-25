@@ -1,0 +1,252 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="css/fontawesome/all.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+    <link rel="stylesheet" href="scss/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+    <!--    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">-->
+    <title>Login</title>
+</head>
+
+<body>
+<div class="wrapper">
+    <div class="leftside-menu">
+        <div class="leftside-menu-inner">
+            <div class="leftside-menu-branding">
+                <a href="dashboard.html"><img src="images/logo-sylhet-osmani.svg" alt=""></a>
+            </div>
+
+            <div class="leftside-menu-wrapper">
+                <ul>
+                    <li><a href="dashboard.html"><span
+                            class="icon icon-35x icon-dashboard"></span><span>Dashboard summary</span><span></span></a>
+                    </li>
+
+                    <li><a href="registered-patient-list.html"><span
+                            class="icon icon-35x icon-outdoor"></span><span>Registration</span><span
+                            class="fa fa-chevron-right"></span></a>
+                    </li>
+
+                    <li><a href="#"><span
+                            class="icon icon-35x icon-pathology"></span><span>Ticket Counter & Appointment </span><span
+                            class="fa fa-chevron-right"></span></a>
+
+                    </li>
+                    <li><a href="#"><span
+                            class="icon icon-35x icon-dashboard"></span><span>Prescription</span><span></span></a>
+                    </li>
+
+                    <li><a href="#"><span
+                            class="icon icon-35x icon-outdoor"></span><span>Ambulance</span><span
+                            class="fa fa-chevron-right"></span></a>
+                    </li>
+
+                </ul>
+            </div>
+            <!--leftside-menu-wrapper-->
+        </div>
+        <!--leftside-menu-inner-->
+    </div>
+    <!-- leftside-menu -->
+
+    <div class="page-content">
+        <div class="top-navbar">
+            <div class="container-fluid">
+                <div class="row align-content-around">
+                    <div class="col-md-6">
+                        <div class="menu-app-name-trigger">
+                            <div class="left-menu-trigger">
+                                <button class="">
+                                    <span></span>
+                                </button>
+                            </div>
+                            <div>
+                                <h3>SYLHET MAG OSMANI Medical College Hospital</h3>
+                            </div>
+                        </div>
+                        <!--menu-app-name-trigger-->
+                    </div>
+                    <div class="col">
+                        <nav>
+                            <ul>
+                                <li><img class="mt-2" src="images/mujib-100.png"></li>
+                                <li class="today-date-menu-item"><a>04:10PM, 10 Oct 2021 </a></li>
+                                <li class="user-notification-menu-item"><a href=""><i class="fa fa-bell"></i></a></li>
+                                <li class="user-profile-menu-item dropdown">
+                                    <a  type="button"
+                                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span><img src="images/user-thumb.svg" alt=""></span>
+                                        <span>  Rafid Mehedi</span>
+                                        <span class="fa fa-chevron-down"></span>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="user-profile.html"> <i class="fa fa-user"></i> Profile</a></li>
+                                        <li><a class="dropdown-item" href="#"> <i class="fas fa-sign-out-alt"></i> Log Out</a></li>
+
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <!--container-fluid-->
+
+            <!--Start From Here -->
+        </div>
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="breadcrumb-wrapper mt-4">
+                            <ul class="breadcrumb">
+                                <li><a href="">Registration Online</a></li>
+                                <li>></li>
+                                <li>Patient Profile</li>
+                            </ul>
+                        </div>
+                        <!--breadcrumb-wrapper-->
+                    </div>
+                    <!--col-md-12-->
+                </div>
+                <!--row-->
+
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="card card-primary patient-profile">
+                            <div class="card-header">Patient Profile</div>
+                            <div class="card-body py-0">
+                                <div class="row">
+                                    <div class="col bg-light-blue">
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 bg-light-blue text-center p-0">
+                                        <div class="hospital-name-logo">
+                                            <div class="patient-thumb">
+                                                <div>
+                                                    <img class="" src="images/patient-male.png">
+                                                </div>
+                                                <div>
+                                                    <h2 class="my-2 h3">Abduallah Al Mamun</h2>
+                                                    <p>Patient ID - R012109000001</p>
+                                                </div>
+                                            </div><!--patient-thumb-->
+
+                                            <a target="_blank" href="resources/12-Patient%20Card.pdf"> <div class="btn btn-secondary mt-3 custom-btn">View Patient ID Card</div></a>
+                                            <a target="_blank" href="resources/patient-card.zip"> <div class="btn btn-info custom-btn mt-3 text-white">Download Patient ID Card</div></a>
+                                            <a href="edit-patient-information.html"> <div class="btn btn-primary mt-3 custom-btn">Edit Information</div></a>
+                                            <a href="patient-profile-deactive.html"> <div class="btn btn-danger mt-3 custom-btn">Deactivate</div></a>
+                                        </div><!--hospital-name-logo-->
+                                        <div class="px-2 py-5">
+
+                                        </div>
+                                    </div> <!--col-->
+                                    <div class="col-md-8 p-0">
+                                        <div class="p-5">
+                                            <h3 class="profile-heading mb-3">Basic Information</h3>
+                                            <ul>
+                                                <li><strong>Date of Birth:</strong>  10 October, 1990</li>
+                                                <li><strong>Gender:</strong> Male</li>
+                                                <li><strong>Blood Group:</strong> AB+</li>
+                                                <li><strong>Marital Status:</strong> Married</li>
+                                                <li><strong>Reg Type:</strong> Medical Student</li>
+                                                <li><strong>Uploaded Document: </strong><a target="_blank" class="btn btn-outline-primary btn-sm" href="resources/student-id.pdf">Student ID</a></li>
+                                            </ul>
+
+
+                                            <h3 class="profile-heading mt-5 mb-3">Contact Information</h3>
+                                            <ul>
+                                                <li><strong>Phone:</strong> 018636326</li>
+                                                <li><strong>Email:</strong>  mamun@gmail.com</li>
+                                                <li><strong>Parmanent Address:</strong>  Zakigonj Sadar, Zakigonj, Sylhet</li>
+                                                <li><strong>Division:</strong> Sylhet</li>
+                                                <li><strong>District:</strong> Sylhet</li>
+                                                <li><strong>Upazila:</strong>  Zakigonj</li>
+                                                <li><strong>Thana:</strong> Zakigonj</li>
+
+                                            </ul>
+
+                                            <h3 class="profile-heading mt-5 mb-3">C/O Information</h3>
+                                            <ul>
+                                                <li><strong>C/O Name:</strong>  Fayaz Al Mamun</li>
+                                                <li><strong>Relation with C/O:</strong> Father</li>
+                                                <li><strong>Mobile Number:</strong>  018986320</li>
+                                            </ul>
+
+
+                                            <h3 class="profile-heading mt-5 mb-3">Other Information</h3>
+                                            <ul>
+                                                <li><strong>Nationality:</strong> Bangladeshi</li>
+                                                <li><strong>Religion:</strong> Islam</li>
+                                                <li><strong>Occupation:</strong> Student</li>
+                                            </ul>
+
+
+                                            <h3 class="profile-heading mt-5 mb-3">Emergency Contact</h3>
+                                            <ul>
+                                                <li><strong>Name:</strong> Fayaz Al Mamun</li>
+                                                <li><strong>Relationship:</strong> Father</li>
+                                                <li><strong>Mobile Number:</strong> 018636326</li>
+                                                <li><strong>Address:</strong> Zakigonj Sadar, Zakigonj, Sylhet.</li>
+                                            </ul>
+                                        </div>
+
+
+                                    </div>
+                                </div> <!--row-->
+                            </div><!--card-body-->
+                        </div><!--card-->
+                    </div><!-- container-fluid -->
+                </div><!--content-->
+
+
+
+            </div>
+            <!--content-->
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            &copy;
+                            <script>
+                                document.write(new Date().getFullYear())
+                            </script>
+                            All copyrights eGeneration Ltd.™
+                        </div>
+                        <div class="col-md-6">
+                            <div class="text-md-end d-none d-md-block">
+                                <ul>
+                                    <li>Powered By :</li>
+                                    <li><img src="images/eGeneration-logo.svg" alt=""></li>
+                                    <li><img src="images/mars-logo.svg" alt=""></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- leftside-menu -->
+
+    </div>
+    <!-- wrapper -->
+</div>
+</div>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

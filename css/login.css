@@ -1,0 +1,98 @@
+.wrapper{
+    font-family: 'Roboto', sans-serif;
+}
+.footer-login {
+    background-color: #fff;
+    bottom: 0;
+    padding: 19px 24px 20px;
+    position: absolute;
+    right: 0;
+    color: #98a6ad;
+}
+
+.footer-login ul {
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+}
+
+.footer-login li {
+    list-style: none;
+    display: inline-block;
+    padding: 5px 7px;
+}
+
+ul li img {
+    opacity: 0.5;
+    transition: 0.2s;
+    opacity: 1;
+}
+.somch-text{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    width: 450px;
+
+}
+.link-text{
+    text-decoration: none;
+    color: #2D80C4 !important;
+
+}
+.verification-text{
+    font-size: 14px;
+}
+
+.flex-container{
+    display: flex;
+}
+
+.dob{
+    width: 15%;
+}
+
+.dob-main{
+    width: 55%;
+}
+
+.top-mid{
+    margin-top: 300px;
+}
+
+.add-reg-btn{
+    border-radius: 50px;
+}
+
+.patient-photo-preview {
+    border: 1px dashed #BDBDBD;
+    background-color: #F4FAFF;
+    text-align: center;
+    padding: 2px;
+    position: relative;
+}
+
+.mandatory-icon {
+    position: absolute;
+    color: red;
+    top: 10px;
+    right: 10px;
+    display: block;
+}
+
+.custom-btn{
+    height: 42px;
+    width: 230px;
+}
+
+.relevent-doc-box{
+
+    outline: 1px solid #2D80C4;
+}
+.reference-file-item-wrapper {
+    display: flex;
+    align-items: flex-end;
+    margin-right: calc(-0.5 * var(--bs-gutter-x));
+    margin-left: calc(-0.5 * var(--bs-gutter-x));
+}

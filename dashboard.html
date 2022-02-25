@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="css/fontawesome/all.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+    <link rel="stylesheet" href="scss/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+    <!--    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">-->
+    <title>Login</title>
+</head>
+
+<body>
+<div class="wrapper">
+    <div class="leftside-menu">
+        <div class="leftside-menu-inner">
+            <div class="leftside-menu-branding">
+                <a href="dashboard.html"><img src="images/logo-sylhet-osmani.svg" alt=""></a>
+            </div>
+
+            <!--leftside-menu-greeting-->
+            <div class="leftside-menu-wrapper">
+                <ul>
+                    <li><a href="dashboard.html"><span
+                            class="icon icon-35x icon-dashboard"></span><span>Dashboard summary</span><span></span></a>
+                    </li>
+
+                    <li><a href="registered-patient-list.html"><span
+                            class="icon icon-35x icon-outdoor"></span><span>Registration</span><span
+                            class="fa fa-chevron-right"></span></a>
+                    </li>
+
+                    <li><a href="#"><span
+                            class="icon icon-35x icon-pathology"></span><span>Ticket Counter & Appointment </span><span
+                            class="fa fa-chevron-right"></span></a>
+
+                    </li>
+                    <li><a href="#"><span
+                            class="icon icon-35x icon-dashboard"></span><span>Prescription</span><span></span></a>
+                    </li>
+
+                    <li><a href="#"><span
+                            class="icon icon-35x icon-outdoor"></span><span>Ambulance</span><span
+                            class="fa fa-chevron-right"></span></a>
+                    </li>
+
+                </ul>
+            </div>
+            <!--leftside-menu-wrapper-->
+        </div>
+        <!--leftside-menu-inner-->
+    </div>
+    <!-- leftside-menu -->
+
+    <div class="page-content">
+        <div class="top-navbar">
+            <div class="container-fluid">
+                <div class="row align-content-around">
+                    <div class="col-md-6">
+                        <div class="menu-app-name-trigger">
+                            <div class="left-menu-trigger">
+                                <button class="">
+                                    <span></span>
+                                </button>
+                            </div>
+                            <div>
+                                <h3>SYLHET MAG OSMANI Medical College Hospital</h3>
+                            </div>
+                        </div>
+                        <!--menu-app-name-trigger-->
+                    </div>
+                    <div class="col">
+                        <nav>
+                            <ul>
+                                <li><img class="mt-2" src="images/mujib-100.png"></li>
+                                <li class="today-date-menu-item"><a>04:10PM, 10 Oct 2021 </a></li>
+                                <li class="user-notification-menu-item"><a href=""><i class="fa fa-bell"></i></a></li>
+                                <li class="user-profile-menu-item dropdown">
+                                    <a  type="button"
+                                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span><img src="images/user-thumb.svg" alt=""></span>
+                                        <span>  Rafid Mehedi</span>
+                                        <span class="fa fa-chevron-down"></span>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="user-profile.html"> <i class="fa fa-user"></i> Profile</a></li>
+                                        <li><a class="dropdown-item" href="#"> <i class="fas fa-sign-out-alt"></i> Log Out</a></li>
+
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <!--container-fluid-->
+
+            <!--Start From Here -->
+        </div>
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="breadcrumb-wrapper mt-4">
+                            <ul class="breadcrumb">
+                                <li><a href="">Registration</a></li>
+                                <li>></li>
+                                <li>Dashboard</li>
+                            </ul>
+                        </div>
+                        <!--breadcrumb-wrapper-->
+                    </div>
+                    <!--col-md-12-->
+                </div>
+                <!--row-->
+
+
+                <div class="row mb-3">
+                    <div class="col-md-12">
+                        <div class="text-end">
+                            <a href="patient-registration.html" class="add-reg-btn btn btn-info text-white"><i
+                                    class="fas fa-plus mx-2"></i></i>Registration
+                            </a>
+                        </div>
+                    </div>
+                    <!--col-md-12-->
+                </div>
+                <!--row-->
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-body vh-100">
+                                <h3 class="text-center top-mid">You don’t have registered any patient yet.</h3>
+                            </div>
+                            <!--col-md-12 -->
+                        </div>
+                        <!--row -->
+                    </div>
+                    <!--card-body -->
+                </div>
+                <!-- container-fluid -->
+            </div>
+            <!--content-->
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            &copy;
+                            <script>
+                                document.write(new Date().getFullYear())
+                            </script>
+                            All copyrights eGeneration Ltd.™
+                        </div>
+                        <div class="col-md-6">
+                            <div class="text-md-end d-none d-md-block">
+                                <ul>
+                                    <li>Powered By :</li>
+                                    <li><img src="images/eGeneration-logo.svg" alt=""></li>
+                                    <li><img src="images/mars-logo.svg" alt=""></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- leftside-menu -->
+
+    </div>
+    <!-- wrapper -->
+</div>
+</div>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

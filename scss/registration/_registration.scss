@@ -1,0 +1,172 @@
+.dob-form-group{
+  display: flex;
+  flex-wrap: nowrap;
+  &>div{
+    &:first-child{
+      flex: 0 0 calc(100% - 122px);
+      max-width:  calc(100% - 122px);
+      input{
+        border-radius: 0.25rem 0 0 0.25rem !important;
+      }
+    }
+    &:last-child{
+      flex: 0 0 122px;
+      max-width: 122px;
+      input{
+        border-radius: 0 0.25rem  0.25rem 0 !important;
+      }
+    }
+  }
+}
+.free-patient-doc-wrapper{
+  margin-left: -32px;
+  margin-right: -32px;
+  padding: 20px 30px;
+  .reference-file-item-wrapper{
+    display: flex;
+    align-items: flex-end;
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+    &>div{
+      padding-right: calc(var(--bs-gutter-x) * .5);
+      padding-left: calc(var(--bs-gutter-x) * .5);
+      flex: 0 0 calc(50% - 65px);
+      max-width:  calc(50% - 65px);
+      &:first-child{
+        
+      }
+      &:last-child{
+        flex: 0 0 130px;
+        max-width: 130px;
+      }
+    }
+  }
+}
+.patient-profile {
+  .hospital-name-logo {
+    display: inline-flex;
+    align-items: center;
+    margin: 30px 0;
+    max-width: 600px;
+    flex-direction: column;
+
+    & > div {
+      padding: 10px;
+
+      h4 {
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .patient-thumb {
+    //background-color: #F5F5F5;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 30px;
+    margin-left: -3rem !important;
+    margin-right: -3rem !important;
+    //margin-top: -3rem !important;
+    img {
+      border: 1px solid #cccccc;
+      border-radius: 100%;
+      padding: 5px;
+    }
+  }
+
+  ul {
+    li {
+      list-style: none;
+      //margin: 10px 5px;
+      padding: 10px;
+      border-bottom: 1px solid #F5F5F5;
+    }
+  }
+}
+.room-assign-card{
+ margin-top: 20px;
+  // background: linear-gradient(#f9f9f9, #e2f2ff);
+  // border: 1px solid #f7f7f7;
+  background-color: #f0f8ff;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  // box-shadow: 0px 0px 2px #aaaaaa;
+  &>div{
+    padding: 10px 20px;
+    color: #000;
+    &:first-child{
+      background: linear-gradient(#f0f8ff, #d4ecff);
+      // border-bottom: 1px solid #ccc;
+      border-radius: 4px 4px 0 0;
+      padding: 10px 20px;
+      h4{
+        font-size: 22px;
+        margin: 0;
+        color: #004680;
+      }
+    }
+    h5{
+      margin: 0;
+    }
+    p{
+      font-size: 80%;
+    }
+  }
+
+  ul{
+    margin: 0;
+    padding: 0;
+    li{
+      list-style: none;
+      display: inline-block;
+      i{
+        margin-right: 10px;
+        color: #16609c;
+      }
+    }
+  }
+  .text-warning{
+    color: #ff6600 !important;
+  }
+}
+.patient-photo-preview{
+  border: 1px dashed #BDBDBD;
+  background-color: #F4FAFF;
+  text-align: center;
+  padding: 2px;
+}
+.patient-photo-upload{
+  .btn{
+    width: 100%;
+    max-width: 180px;
+    display: table;
+    text-align: left;
+    padding: 5px 35px;
+    i{
+      margin-right: 10px;
+    }
+  }
+  ul{
+    margin-left: 0;
+    padding-left: 15px;
+    li{
+      font-size: 80%;
+    }
+  }
+}
+.upload-btn{
+  width: 100%;
+  display: table;
+  text-align: left;
+  padding: 5px 35px;
+  color: #fff !important;
+  i{
+    margin-right: 10px;
+  }
+}
+.form-heading{
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: #000;
+}

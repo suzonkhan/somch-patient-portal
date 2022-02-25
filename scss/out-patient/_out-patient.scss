@@ -1,0 +1,89 @@
+.queue-patient-filter {
+
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+
+    li {
+      list-style: none;
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.teeth-group {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .teeth {
+    background-image: url("../images/teeth.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-color: $darkBlue;
+    border: 1px solid #F5F5F5;
+    width: 50px;
+    height: 60px;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 4px;
+
+    &.active-teeth {
+      background-color: #F84430;
+    }
+
+  }
+
+  break {
+    flex-basis: 100%;
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+  }
+}
+
+.selected-teeth {
+  & > div.selected-teeth-item {
+    display: flex;
+    align-items: center;
+    margin-left: -5px;
+    margin-right: -5px;
+    //width: 100%;
+
+    & > div {
+      padding: 5px;
+
+      .selected-teeth-number {
+        display: block;
+        background-color: #2D80C4;
+        color: #ffffff;
+        padding: 8px;
+        border-radius: 4px;
+        font-size: 16px;
+        line-height: 22px;
+        width: 100px;
+      }
+
+      button {
+        //border-radius: 50%;
+        font-size: 14px;
+        line-height: 18px;
+        padding: 10px;
+      }
+    }
+  }
+}
+
+table.treatment-plan-table {
+  td.date-column {
+    max-width: 80px;
+  }
+  input[type="date"] {
+    max-width: 120px;
+  }
+}

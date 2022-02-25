@@ -1,0 +1,27 @@
+.footer {
+  ul {
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+
+    li {
+      list-style: none;
+      display: inline-block;
+      padding: 5px 7px;
+
+      img {
+        opacity: 1;
+        transition: 0.2s;
+        max-height: 30px;
+      }
+
+      &:hover {
+        img {
+          // filter: grayscale(100%);
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}

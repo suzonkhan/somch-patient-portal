@@ -1,0 +1,656 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="css/fontawesome/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="scss/main.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+    <title>Patient Registration</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="leftside-menu">
+        <div class="leftside-menu-inner">
+            <div class="leftside-menu-branding">
+                <a href="dashboard.html"><img src="images/logo-sylhet-osmani.svg" alt=""></a>
+            </div>
+
+            <div class="leftside-menu-wrapper">
+                <ul>
+                    <li><a href="dashboard.html"><span
+                            class="icon icon-35x icon-dashboard"></span><span>Dashboard summary</span><span></span></a>
+                    </li>
+
+                    <li><a href="registered-patient-list.html"><span
+                            class="icon icon-35x icon-outdoor"></span><span>Registration</span><span
+                            class="fa fa-chevron-right"></span></a>
+                    </li>
+
+                    <li><a href="#"><span
+                            class="icon icon-35x icon-pathology"></span><span>Ticket Counter & Appointment </span><span
+                            class="fa fa-chevron-right"></span></a>
+
+                    </li>
+                    <li><a href="#"><span
+                            class="icon icon-35x icon-dashboard"></span><span>Prescription</span><span></span></a>
+                    </li>
+
+                    <li><a href="#"><span
+                            class="icon icon-35x icon-outdoor"></span><span>Ambulance</span><span
+                            class="fa fa-chevron-right"></span></a>
+                    </li>
+
+                </ul>
+            </div>
+            <!--leftside-menu-wrapper-->
+        </div>
+        <!--leftside-menu-inner-->
+    </div>
+    <!-- leftside-menu -->
+    <div class="page-content">
+        <div class="top-navbar">
+            <div class="container-fluid">
+                <div class="row align-content-around">
+                    <div class="col-md-6">
+                        <div class="menu-app-name-trigger">
+                            <div class="left-menu-trigger">
+                                <button class="">
+                                    <span></span>
+                                </button>
+                            </div>
+                            <div>
+                                <h3>SYLHET MAG OSMANI Medical College Hospital</h3>
+                            </div>
+                        </div><!--menu-app-name-trigger-->
+
+                    </div> <!--col-->
+                    <div class="col">
+                        <nav>
+                            <ul>
+                                <li class="today-date-menu-item"><a>04:10PM, 10 Oct 2021 </a></li>
+                                <li class="user-notification-menu-item"><a href=""><i class="fa fa-bell"></i></a></li>
+                                <li class="user-profile-menu-item dropdown">
+                                    <a type="button"
+                                       id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span><img src="images/user-thumb.svg" alt=""></span>
+                                        <span>  Rafid Mehedi</span>
+                                        <span class="fa fa-chevron-down"></span>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="user-profile.html"> <i
+                                                class="fa fa-user"></i> Profile</a></li>
+                                        <li><a class="dropdown-item" href="#"> <i class="fas fa-sign-out-alt"></i> Log
+                                            Out</a></li>
+
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <!--container-fluid-->
+        </div>
+        <div class="content">
+            <div class="container-fluid">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="breadcrumb-wrapper mt-4">
+                            <ul class="breadcrumb">
+                                <li><a href="">Registration</a></li>
+                                <li> ></li>
+                                <li>Edit Patient Information</li>
+                            </ul>
+                        </div><!--breadcrumb-wrapper-->
+
+                    </div><!--col-md-12-->
+                </div><!--row-->
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card h-100 p-3">
+                            <div class="card-body">
+                                <h4 class="form-heading fw-bold">Basic Information</h4>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <label for="">Full Name(In English)<span>*</span></label>
+                                            <input type="text" value="Abduallah Al Mamun"
+                                                   class="form-control">
+                                        </div>
+                                        <!--form-group-->
+                                    </div><!--col-->
+                                </div> <!--row-->
+
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <label for="">Gender<span>*</span></label>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios"
+                                                       id="exampleRadios1" value="option1" checked>
+                                                <label class="form-check-label" for="exampleRadios1">
+                                                    Male
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios"
+                                                       id="exampleRadios2" value="option2">
+                                                <label class="form-check-label" for="exampleRadios2">
+                                                    Female
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios"
+                                                       id="exampleRadios3" value="option3">
+                                                <label class="form-check-label" for="exampleRadios3">
+                                                    Other
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <!--form-group-->
+                                    </div><!--col-->
+                                </div> <!--row-->
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group flex-container">
+                                            <div class="dob-main">
+                                                <label class="custom-label" for="">Date of Birth<span>*</span></label>
+                                                <div class="icon-field-wrapper icon-right">
+                                                    <input type="text" value="10/10/1990" class="form-control">
+                                                    <i class="far fa-calendar-alt"></i>
+                                                </div><!--date-field-wrapper-->
+                                            </div>
+
+                                            <div class="dob">
+                                                <label class="custom-label" for="">Age<span class="hidden"
+                                                                                            style="visibility: hidden;">*</span></label>
+                                                <input type="text" value="31" maxlength="8"
+                                                       class="form-control">
+                                            </div>
+                                            <div class="dob">
+                                                <label class="custom-label invisible" for="">Age<span class="hidden"
+                                                                                                      style="visibility: hidden;">*</span></label>
+                                                <input type="text" value="03" maxlength="8"
+                                                       class="form-control">
+                                            </div>
+                                            <div class="dob">
+                                                <label class="custom-label invisible" for="">Age<span class="hidden"
+                                                                                                      style="visibility: hidden;">*</span></label>
+                                                <input type="text" value="26" maxlength="8"
+                                                       class="form-control">
+                                            </div>
+                                        </div>  <!--form-group-->
+                                    </div><!--col-->
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="">Mobile Number<span>*</span></label>
+                                            <input type="tel" value="013252014041"
+                                                   class="form-control">
+                                        </div>
+                                        <!--form-group-->
+                                    </div><!--col-->
+                                </div> <!--row-->
+                                <div class="row ">
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="">Blood Group</label>
+                                            <select name="" id="" class="form-select">
+                                                <option value="">AB+</option>
+                                                <option value="">A+</option>
+                                                <option value="">A-</option>
+                                                <option value="">B+</option>
+                                                <option value="">B-</option>
+                                                <option value="">O+</option>
+                                                <option value="">O-</option>
+                                                <option value="">AB-</option>
+                                            </select>
+                                        </div>       <!--form-group-->
+                                    </div><!--col-->
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="">Marital Status</label>
+                                            <!--<span>*</span>-->
+                                            <select name="" id="" class="form-select">
+                                                <option value="">Married</option>
+                                                <option value="">Unmarried</option>
+                                                <option value="">Widow</option>
+                                                <option value="">Divorced</option>
+                                            </select>
+                                        </div><!--form-group-->
+                                    </div><!--col-->
+                                </div> <!--row-->
+
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <label for="">Govt. ID</label>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="govtID"
+                                                       id="nationalId" value="nationalID" checked>
+                                                <label class="form-check-label" for="nationalId">
+                                                    National ID
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="govtID"
+                                                       id="birthCertificate" value="birthCertificate">
+                                                <label class="form-check-label" for="birthCertificate">
+                                                    Birth Certificate
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="govtID" id="passport"
+                                                       value="passport">
+                                                <label class="form-check-label" for="passport">
+                                                    Passport
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="govtID" id="noID"
+                                                       value="noID">
+                                                <label class="form-check-label" for="noID">
+                                                    Don’t Have ID
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <!--form-group-->
+                                    </div><!--col-->
+                                </div> <!--row-->
+
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="">Insert NID No. Here</label>
+                                            <input type="text" value="199019109691" class="form-control">
+                                        </div>  <!--form-group-->
+                                    </div><!--col-->
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="">Reg Type</label>
+                                            <select name="patient-reg-type" id="patient-reg-type" class="form-select">
+                                                <option value="medicalStudent">Medical Student</option>
+                                                <option value="general">General</option>
+                                                <option value="freedomFighter">Freedom Fighter</option>
+                                                <option value="govtWorder">Govt Social Worker</option>
+                                                <option value="govtServiceHolder">Govt Service Holder</option>
+                                                <option value="vip">VIP</option>
+                                                <option value="hospitalStaff">Hospital Staff</option>
+                                                <option value="Medical Student">Others</option>
+                                            </select>
+                                        </div><!--form-group-->
+                                    </div><!--col-->
+                                </div> <!--row-->
+
+                                <div class="row bg-light-blue">
+                                    <div class="row my-3">
+                                        <h5 class="fw-bold text-dark">View Relevant Document</h5>
+
+                                        <div class="row my-2">
+                                            <div class="col-md-3 ">
+                                                <div class="relevent-doc-box p-1 rounded text-center">Student ID</div>
+                                            </div><!--col-md-6-->
+                                            <div class="col-md-9 text-end">
+                                                <a class="btn btn-primary"
+                                                   href="resources/student-id.pdf">View</a>
+                                            </div><!--col-md-6-->
+
+
+                                        </div>
+
+
+                                    </div><!--row-->
+                                </div> <!--row-->
+
+
+                                <div class="row mt-4">
+                                    <div class="col-md-12">
+                                        <h4 class="form-heading fw-bold">C/O Information</h4>
+                                    </div><!--col-->
+                                </div> <!--row-->
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="">C/O Name</label>
+                                            <input type="text" class="form-control" value="Fayaz Al Mamun">
+                                        </div><!--form-group-->
+                                    </div><!--col-->
+
+                                </div> <!--row-->
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="">Relationship</label>
+                                            <select name="" id="" class="form-select">
+                                                <option selected value="">Father</option>
+                                                <option value="">Mother</option>
+                                            </select>
+                                        </div>  <!--form-group-->
+                                    </div><!--col-->
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="">Mobile Number</label>
+                                            <input type="text" class="form-control" value="01591234567">
+                                        </div><!--form-group-->
+                                    </div><!--col-->
+                                </div> <!--row-->
+
+                            </div>
+                            <!-- card-body -->
+                        </div>
+                        <!--card -->
+                    </div><!--col-md-6-->
+
+                    <div class="col-md-6">
+                        <div class="card p-3 h-100">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h4 class="form-heading fw-bold"> Patient Photo</h4>
+                                    </div><!--col-->
+                                </div> <!--row-->
+
+                                <div class="row align-items-center mt-2">
+                                    <div class="col-md-4">
+                                        <img src="images/patient-male.png"/>
+                                    </div><!--col-md-4-->
+                                    <div class="col-md-8">
+                                        <div class="patient-photo-upload">
+                                            <button class="btn btn-secondary mb-2"><i class="fas fa-camera"></i> Camera
+                                            </button>
+                                            <label for="upload-photo" class="btn btn-secondary"> <i
+                                                    class="fa fa-upload"></i> Upload </label>
+                                            <input class="d-none" type="file" id="upload-photo">
+                                            <ul class="mt-4 text-sm">
+                                                <li>Upload only JPG, PNG format image</li>
+                                                <li>Max image size 2MB</li>
+                                            </ul>
+                                        </div>
+                                        <!-- patient-photo-upload -->
+
+                                    </div><!--col-md-4-->
+                                </div> <!--row-->
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h4 class="mt-4 form-heading fw-bold"> Other Information </h4>
+                                    </div>   <!--col-->
+                                </div><!--row-->
+                                <div class="row">
+
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="">Occupation</label>
+                                            <select name="" id="" class="form-select">
+                                                <option value=""> Business</option>
+                                                <option value=""> Private Service</option>
+                                                <option value=""> Govt. Service</option>
+                                                <option value=""> Student</option>
+                                                <option value="">Unemployed</option>
+                                            </select>
+                                        </div>  <!--form-group-->
+                                    </div><!--col-->
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="">Religion</label>
+                                            <select name="" id="" class="form-select">
+                                                <option value="">Islam</option>
+                                                <option value=""> Hindu</option>
+                                                <option value=""> Christian</option>
+                                                <option value=""> Buddhist</option>
+                                                <option value=""> Sikh</option>
+                                                <option value=""> Other</option>
+
+                                            </select>
+                                        </div>       <!--form-group-->
+                                    </div><!--col-->
+
+                                </div> <!--row-->
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="">Nationality</label>
+                                            <select name="" id="" class="form-select">
+                                                <option value="">Bangladeshi</option>
+                                                <option value="">Foreigner</option>
+                                            </select>
+                                        </div><!--form-group-->
+
+                                    </div><!--col-->
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="">Email</label>
+                                            <input type="text" class="form-control" value="mamun@gmail.com">
+                                        </div>  <!--form-group-->
+                                    </div><!--col-->
+
+                                </div> <!--row-->
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h4 class="form-heading mt-4 fw-bold"> Contact Information</h4>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="">Division</label>
+                                            <select name="" id="" class="form-select">
+                                                <option>Sylhet</option>
+                                                <option>Rangpur</option>
+                                                <option>Rajshahi</option>
+                                                <option>Mymensingh</option>
+                                                <option>Dhaka</option>
+                                                <option>Chittagong</option>
+                                                <option>Barisal</option>
+                                            </select>
+                                        </div>
+                                        <!--form-group-->
+                                    </div><!--col-->
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="">District</label>
+                                            <select name="" id="" class="form-select">
+                                                <option>Sylhet</option>
+                                                <option>Gopalganj</option>
+                                                <option>Kishoreganj</option>
+                                                <option>Madaripur</option>
+                                                <option>Manikganj</option>
+                                                <option>Munshiganj</option>
+                                                <option>Narayanganj</option>
+                                                <option>Narsingdi</option>
+                                                <option>Rajbari</option>
+                                                <option>Shariatpur</option>
+                                                <option>Tangail</option>
+                                                <option>Bagerhat</option>
+                                                <option>Chuadanga</option>
+                                                <option>Jessore</option>
+                                                <option>Jhenaidah</option>
+                                                <option>Khulna</option>
+                                                <option>Kushtia</option>
+                                                <option>Magura</option>
+                                                <option>Meherpur</option>
+                                                <option>Narail</option>
+                                                <option>Satkhira</option>
+                                                <option>Jamalpur</option>
+                                                <option>Mymensingh</option>
+                                                <option>Netrokona</option>
+                                                <option>Sherpur</option>
+                                                <option>Bogra</option>
+                                                <option>Joypurhat</option>
+                                                <option>Naogaon</option>
+                                                <option>Natore</option>
+                                                <option>Chapainawabganj</option>
+                                                <option>Pabna</option>
+                                                <option>Rajshahi</option>
+                                                <option>Sirajganj</option>
+                                                <option>Dinajpur</option>
+                                                <option>Gaibandha</option>
+                                                <option>Kurigram</option>
+                                                <option>Lalmonirhat</option>
+                                                <option>Nilphamari</option>
+                                                <option>Panchagarh</option>
+                                                <option>Rangpur</option>
+                                                <option>Thakurgaon</option>
+                                                <option>Habiganj</option>
+                                                <option>Moulvibazar</option>
+                                                <option>Sunamganj</option>
+                                            </select>
+                                        </div>
+                                        <!--form-group-->
+                                    </div><!--col-->
+                                </div>
+                                <div class="row">
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="">Thana</label>
+                                            <select name="" id="" class="form-select">
+                                                <option>Zakiganj</option>
+                                                <option>Balaganj</option>
+                                                <option>Beanibazar</option>
+                                                <option>Bishwanath</option>
+                                                <option>Companiganj</option>
+                                                <option>Fenchuganj</option>
+                                                <option>Golapganj</option>
+                                                <option>Gowainghat</option>
+                                                <option>Jaintiapur</option>
+                                                <option>Kanaighat</option>
+                                                <option>Sylhetsadar</option>
+                                                <option>Dakshinsurma</option>
+                                                <option>Osmaninagar</option>
+                                                <option>Moulvibazar Sadar</option>
+                                                <option>SreeMangal</option>
+                                                <option>Kulaura</option>
+                                                <option>Kamalganj</option>
+                                                <option>Juri</option>
+                                                <option>Barlekha</option>
+                                                <option>Rajnagar</option>
+                                            </select>
+                                        </div>
+                                        <!--form-group-->
+                                    </div><!--col-->
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="">Address</label>
+                                            <input type="email" value="Zakigonj Sadar, Zakigonj, Sylhet"
+                                                   class="form-control">
+
+                                        </div>
+                                        <!--form-group-->
+                                    </div><!--col-->
+                                </div><!--row-->
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h4 class="form-heading mt-4 fw-bold"> Emergency Contact </h4></div>
+                                    <!--col-->
+                                </div><!--row-->
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="">Name</label>
+                                            <input type="text" class="form-control" value="Fayaz Al Mamun">
+                                        </div><!--form-group-->
+                                    </div><!--col-->
+                                </div> <!--row-->
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="">Mobile Number</label>
+                                            <input type="tel" value="01591234567"
+                                                   class="form-control">
+                                        </div><!--form-group-->
+                                    </div><!--col-->
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="">Relationship</label>
+                                            <select name="" id="" class="form-select">
+                                                <option value="">Father</option>
+                                                <option value="">Mother</option>
+                                            </select>
+                                        </div>  <!--form-group-->
+                                    </div><!--col-->
+                                </div> <!--row-->
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="">Address</label>
+                                            <input type="text" class="form-control"
+                                                   value="Zakigonj Sadar, Zakigonj, Sylhet">
+
+                                        </div>  <!--form-group-->
+                                    </div><!--col-->
+                                </div> <!--row-->
+
+                            </div>
+                            <!--card-body-->
+                        </div>
+                        <!--card-->
+                    </div>
+                    <!--col-md-6-->
+
+                </div><!--row-->
+
+
+                <div class="row">
+                    <div class="col-md-12 text-center form-action-btn mb-5 mt-4">
+                        <button class="btn btn-outline-secondary">Reset</button>
+                        <a href="patient-card.html" target="_blank" class="btn btn-primary">Save</a>
+                        <a class="btn btn-secondary px-5" target="_blank" href="images/Patient-ID-Card.pdf">View
+                            Patient ID Card</a>
+                    </div>
+                </div><!--row-->
+
+            </div><!-- container-fluid -->
+        </div><!--content-->
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        &copy;
+                        <script>document.write(new Date().getFullYear())</script>
+                        All copyrights eGeneration Ltd.™
+                    </div>
+                    <div class="col-md-6">
+                        <div class="text-md-end d-none d-md-block">
+                            <ul>
+                                <li>Powered By :</li>
+                                <li><img src="images/egeneration-logo.png" alt=""></li>
+                                <!-- <li><img src="images/bangladesh-computer-council.svg" alt=""></li>
+                                <li><img src="images/bangladesh-government.svg" alt=""></li> -->
+                                <li><img src="images/mars-logo.png" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- leftside-menu -->
+
+</div>
+<!-- wrapper -->
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
